@@ -21,14 +21,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from s2 device
 $(call inherit-product, device/leeco/s2/device.mk)
 
+#features
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_BOOT_ANIMATION_RES := 1080
+
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/superior/config/common.mk)
+$(call inherit-product, vendor/havoc/config/common.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_BRAND := LeEco
 PRODUCT_DEVICE := s2
 PRODUCT_MANUFACTURER := LeMobile
-PRODUCT_NAME := superior_s2
+PRODUCT_NAME := havoc_s2
 
 PRODUCT_GMS_CLIENTID_BASE := android-leeco
 
@@ -36,5 +40,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE=le_s2_ww \
     PRODUCT_NAME=Le2_WW \
     PRIVATE_BUILD_DESC="s2-user 6.0.1 IIXOSOP5801910121S 44 release-keys"
+    
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \ 
+    ro.face.moto_unlock_service=$(TARGET_FACE_UNLOCK_SUPPORTED)
 
 BUILD_FINGERPRINT := Letv/Le2_WW/le_s2_ww:6.0.1/IIXOSOP5801910121S/44:user/release-keys

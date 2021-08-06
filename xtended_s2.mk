@@ -27,13 +27,13 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/havoc/config/common.mk)
+$(call inherit-product, vendor/xtended/config/common.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_BRAND := LeEco
 PRODUCT_DEVICE := s2
 PRODUCT_MANUFACTURER := LeMobile
-PRODUCT_NAME := havoc_s2
+PRODUCT_NAME := xtended_s2
 
 PRODUCT_GMS_CLIENTID_BASE := android-leeco
 
@@ -41,17 +41,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE=le_s2_ww \
     PRODUCT_NAME=Le2_WW \
     PRIVATE_BUILD_DESC="s2-user 6.0.1 IIXOSOP5801910121S 44 release-keys"
-    
-# Face Unlock
-TARGET_FACE_UNLOCK_SUPPORTED := false
-ifeq ($(TARGET_GAPPS_ARCH),arm64)
-ifneq ($(TARGET_DISABLE_ALTERNATIVE_FACE_UNLOCK), true)
-PRODUCT_PACKAGES += \
-    FaceUnlockService
-TARGET_FACE_UNLOCK_SUPPORTED := true
-endif
-endif
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.face.moto_unlock_service=$(TARGET_FACE_UNLOCK_SUPPORTED)
 
 BUILD_FINGERPRINT := Letv/Le2_WW/le_s2_ww:6.0.1/IIXOSOP5801910121S/44:user/release-keys

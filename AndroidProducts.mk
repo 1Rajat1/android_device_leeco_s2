@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/havoc_s2.mk
+    $(LOCAL_DIR)/xtended_s2.mk
 
 COMMON_LUNCH_CHOICES := \
-    havoc_s2-user \
-    havoc_s2-userdebug \
-    havoc_s2-eng
+    xtended_s2-user \
+    xtended_s2-userdebug \
+    xtended_s2-eng

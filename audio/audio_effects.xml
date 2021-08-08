@@ -95,7 +95,7 @@
         <stream type="alarm">
             <apply effect="alarm_helper"/>
         </stream>
-        <stream type="voice_call">
+        <stream type="voice_calls">
             <apply effect="voice_helper"/>
         </stream>
         <stream type="notification">

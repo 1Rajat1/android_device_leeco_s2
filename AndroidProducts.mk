@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/komodo_s2.mk
+    $(LOCAL_DIR)/xtended_s2.mk
 
 COMMON_LUNCH_CHOICES := \
-    komodo_s2-user \
-    komodo_s2-userdebug \
-    komodo_s2-eng
+    xtended_s2-user \
+    xtended_s2-userdebug \
+    xtended_s2-eng

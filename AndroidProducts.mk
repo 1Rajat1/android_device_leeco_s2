@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_s2.mk
+    $(LOCAL_DIR)/komodo_s2.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_s2-user \
-    lineage_s2-userdebug \
-    lineage_s2-eng
+    komodo_s2-user \
+    komodo_s2-userdebug \
+    komodo_s2-eng

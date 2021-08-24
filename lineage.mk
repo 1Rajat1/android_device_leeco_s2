@@ -31,9 +31,9 @@ PRODUCT_GMS_CLIENTID_BASE := android-leeco
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE=le_s2 \
     PRODUCT_NAME=Le2_CN \
-    PRIVATE_BUILD_DESC="s2-user 6.0.1 IIXOSOP5801910121S 44 release-keys"
+    PRIVATE_BUILD_DESC="sailfish-user 8.1.0 OPM4.171019.021.P1 4820305 release-keys"
 
-BUILD_FINGERPRINT := Letv/Le2_WW/le_s2_ww:6.0.1/IIXOSOP5801910121S/44:user/release-keys
+BUILD_FINGERPRINT := google/sailfish/sailfish:8.1.0/OPM4.171019.021.P1/4820305:user/release-keys
 
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST += ro.product.model
 

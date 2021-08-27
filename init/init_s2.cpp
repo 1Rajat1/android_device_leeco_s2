@@ -93,14 +93,4 @@ void vendor_load_properties()
     }
     property_overrride_triple("ro.product.device", "ro.product.system.device", "ro.product.vendor.device", "le_s2_ww");
     
-    property_override("ro.build.description", "coral-user 10 QQ3A.200705.002 6506677 release-keys");
-    property_override("ro.vendor.build.description", "coral-user 10 QQ3A.200705.002 6506677 release-keys");
-    property_override("ro.system.build.description", "coral-user 10 QQ3A.200705.002 6506677 release-keys");
-    property_override("ro.bootimage.build.description", "coral-user 10 QQ3A.200705.002 6506677 release-keys");
-    property_override("ro.product.build.description", "coral-user 10 QQ3A.200705.002 6506677 release-keys");
-    property_override("ro.build.fingerprint", "google/coral/coral:10/QQ3A.200705.002/6506677:user/release-keys");
-    property_override("ro.vendor.build.fingerprint", "google/coral/coral:10/QQ3A.200705.002/6506677:user/release-keys");
-    property_override("ro.bootimage.build.fingerprint", "google/coral/coral:10/QQ3A.200705.002/6506677:user/release-keys");
-    property_override("ro.system.build.fingerprint", "google/coral/coral:10/QQ3A.200705.002/6506677:user/release-keys");
-    property_override("ro.product.build.fingerprint", "google/coral/coral:10/QQ3A.200705.002/6506677:user/release-keys");
 }

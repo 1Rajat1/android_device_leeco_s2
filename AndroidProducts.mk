@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/bliss_s2.mk
+    $(LOCAL_DIR)/superior_s2.mk
 
 COMMON_LUNCH_CHOICES := \
-    bliss_s2-user \
-    bliss_s2-userdebug \
-    bliss_s2-eng
+    superior_s2-user \
+    superior_s2-userdebug \
+    superior_s2-eng

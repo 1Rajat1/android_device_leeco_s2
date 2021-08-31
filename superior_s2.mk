@@ -25,6 +25,8 @@ $(call inherit-product, device/leeco/s2/device.mk)
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
+TARGET_LAUNCHER := lawnchair
+TARGET_LAUNCHER := oplauncher
 
 LAWNCHAIR_OPTOUT := true
 

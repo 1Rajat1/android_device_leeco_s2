@@ -29,13 +29,13 @@ TARGET_GAPPS_ARCH := arm64
 LAWNCHAIR_OPTOUT := true
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
+$(call inherit-product, vendor/superior/config/common.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_BRAND := LeEco
 PRODUCT_DEVICE := s2
 PRODUCT_MANUFACTURER := LeMobile
-PRODUCT_NAME := bliss_s2
+PRODUCT_NAME := superior_s2
 
 PRODUCT_GMS_CLIENTID_BASE := android-leeco
 
